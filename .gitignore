@@ -2,4 +2,5 @@
 /config/app.php
 /tmp/*
 /logs/*
-/webroot/img/split/files/shop/
+/webroot/img/split/files/*
+/webroot/video/*
