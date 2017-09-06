@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>DevBridge Autocomplete Demo</title>
+    <link href="content/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+    
+    	<div style="position: relative; height: 80px;">
+            <input type="text" name="q" id="query" />
+        </div>
+        
+        <div id="result"></div>
+    
+    </div>    
+
+    <script type="text/javascript" src="scripts/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="src/jquery.autocomplete.js"></script>
+    
+    <script>
+	
+	var options, a;
+	jQuery(function(){
+		options = { serviceUrl:'ajax/handle.php',
+					minChars:2,
+					delimiter: /(,|;)\s*/, // regex or characte
+					deferRequestBy: 200, //miliseconds
+					onSelect: function(value, data){ $('#result').html('You selected: ' + value.data); }
+				 };
+			a = $('#query').autocomplete(options);
+	}); 
+
+	</script>
+    
+</body>
+</html>

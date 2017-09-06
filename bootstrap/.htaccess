@@ -1,0 +1,6 @@
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+RewriteBase /bootstrap/
+
+RewriteRule ^(.*)/$ /bootstrap/index.php 

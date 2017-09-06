@@ -1,0 +1,104 @@
+				<html xmlns:o="urn:schemas-microsoft-com:office:office"
+				xmlns:x="urn:schemas-microsoft-com:office:excel"
+				xmlns="http://www.w3.org/TR/REC-html40">
+
+				<head>
+				<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+				<meta name=ProgId content=Excel.Sheet>
+				<!--[if gte mso 9]><xml>
+				 <o:DocumentProperties>
+				  <o:LastAuthor>Sriram</o:LastAuthor>
+				  <o:LastSaved>2005-01-02T07:46:23Z</o:LastSaved>
+				  <o:Version>10.2625</o:Version>
+				 </o:DocumentProperties>
+				 <o:OfficeDocumentSettings>
+				  <o:DownloadComponents/>
+				 </o:OfficeDocumentSettings>
+				</xml><![endif]-->
+				<style>
+				<!--table
+					{mso-displayed-decimal-separator:"\.";
+					mso-displayed-thousand-separator:"\,";}
+				@page
+					{margin:1.0in .75in 1.0in .75in;
+					mso-header-margin:.5in;
+					mso-footer-margin:.5in;}
+				tr
+					{mso-height-source:auto;}
+				col
+					{mso-width-source:auto;}
+				br
+					{mso-data-placement:same-cell;}
+				.style0
+					{mso-number-format:General;
+					text-align:general;
+					vertical-align:bottom;
+					white-space:nowrap;
+					mso-rotate:0;
+					mso-background-source:auto;
+					mso-pattern:auto;
+					color:windowtext;
+					font-size:10.0pt;
+					font-weight:400;
+					font-style:normal;
+					text-decoration:none;
+					font-family:Arial;
+					mso-generic-font-family:auto;
+					mso-font-charset:0;
+					border:none;
+					mso-protection:locked visible;
+					mso-style-name:Normal;
+					mso-style-id:0;}
+				td
+					{mso-style-parent:style0;
+					padding-top:1px;
+					padding-right:1px;
+					padding-left:1px;
+					mso-ignore:padding;
+					color:windowtext;
+					font-size:10.0pt;
+					font-weight:400;
+					font-style:normal;
+					text-decoration:none;
+					font-family:Arial;
+					mso-generic-font-family:auto;
+					mso-font-charset:0;
+					mso-number-format:General;
+					text-align:general;
+					vertical-align:bottom;
+					border:none;
+					mso-background-source:auto;
+					mso-pattern:auto;
+					mso-protection:locked visible;
+					white-space:nowrap;
+					mso-rotate:0;}
+				.xl24
+					{mso-style-parent:style0;
+					white-space:normal;}
+				-->
+				</style>
+				<!--[if gte mso 9]><xml>
+				 <x:ExcelWorkbook>
+				  <x:ExcelWorksheets>
+				   <x:ExcelWorksheet>
+					<x:Name>Отчет</x:Name>
+					<x:WorksheetOptions>
+					 <x:Selected/>
+					 <x:ProtectContents>False</x:ProtectContents>
+					 <x:ProtectObjects>False</x:ProtectObjects>
+					 <x:ProtectScenarios>False</x:ProtectScenarios>
+					</x:WorksheetOptions>
+				   </x:ExcelWorksheet>
+				  </x:ExcelWorksheets>
+				  <x:WindowHeight>10005</x:WindowHeight>
+				  <x:WindowWidth>10005</x:WindowWidth>
+				  <x:WindowTopX>120</x:WindowTopX>
+				  <x:WindowTopY>135</x:WindowTopY>
+				  <x:ProtectStructure>False</x:ProtectStructure>
+				  <x:ProtectWindows>False</x:ProtectWindows>
+				 </x:ExcelWorkbook>
+				</xml><![endif]-->
+				</head>
+
+				<body link=blue vlink=purple>
+				<table x:str border=0 cellpadding=0 cellspacing=0 style='border-collapse: collapse;table-layout:fixed;'><tr><td class=xl24 width=64 style='text-align:center;color:blue;border-bottom:1px solid black;'><strong> Название </strong></td><td class=xl24 width=64 style='text-align:center;color:blue;border-bottom:1px solid black;'><strong> Артикул </strong></td><td class=xl24 width=64 style='text-align:center;color:blue;border-bottom:1px solid black;'><strong> Штрихкод </strong></td><td class=xl24 width=64 style='text-align:center;color:blue;border-bottom:1px solid black;'><strong> На складе </strong></td><td class=xl24 width=64 style='text-align:center;color:blue;border-bottom:1px solid black;'><strong> Доступно </strong></td><td class=xl24 width=64 style='text-align:center;color:blue;border-bottom:1px solid black;'><strong> Цена (грн) </strong></td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Мобильный телефон Samsung Galaxy Star Advance Duos G350 Black</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>002</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Мобильный телефон Samsung A500H Galaxy A5 Midnight Black</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>003</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Мобильный телефон Samsung Galaxy Core 2 G355 White</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>001</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Мобильный телефон Samsung A300H Galaxy A3 Champagne Gold</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>004</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Мобильный телефон Samsung A300H Galaxy A3 Pink</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>005</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Мобильный телефон Samsung A300H Galaxy A3 Midnight Black</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>006</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Мобильный телефон Samsung A300H Galaxy A3 Platinum Silver</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>007</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Мобильный телефон Samsung A300H Galaxy A3 Pearl White</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>008</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Мобильный телефон Samsung A500H Galaxy A5 Platinum Silver</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>009</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Мобильный телефон Samsung A500H Galaxy A5 Pearl White</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>010</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Мобильный телефон Samsung A500H Galaxy A5 Champagne Gold</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>011</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Мобильный телефон Samsung A500H Galaxy A5 Pink</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>012</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Мобильный телефон Samsung A700H Galaxy A7 Midnight Black</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>013</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Мобильный телефон Samsung A700H Galaxy A7 Pearl White</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>014</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Мобильный телефон Samsung A700H Galaxy A7 Champagne Gold</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>015</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Мобильный телефон Samsung B310e Blue</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>016</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Мобильный телефон Samsung B310e White</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>017</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr></table></body></html>

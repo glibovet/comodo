@@ -1,0 +1,12 @@
+<script src="libs/jquery/jquery-2.2.0.min.js"></script>
+<script src="libs/transformicons/transformicons.min.js"></script>
+<script src="libs/owl-carousel/owl.carousel.min.js"></script>
+<script src="libs/remodal/jquery.remodal.js"></script>
+<script src="libs/JScrollPane2/jquery.jscrollpane.min.js"></script>
+<script src="libs/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="libs/lightbox/lightbox.js"></script>
+<script src="libs/masonry-filter/imagesloaded.js"></script>
+<script src="libs/masonry-filter/masonry-3.1.4.js"></script>
+<script src="libs/masonry-filter/masonry.filter.js"></script>
+<script src="js/main.js"></script>
+<script src="//localhost:8585/livereload.js"></script>

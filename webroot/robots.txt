@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: 
+
+User-agent: Yandex
+Disallow: 
+Host: www.comodo.kiev.ua
+
+Sitemap: http://www.comodo.kiev.ua/sitemap.xml

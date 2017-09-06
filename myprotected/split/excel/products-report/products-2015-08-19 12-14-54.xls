@@ -1,0 +1,104 @@
+				<html xmlns:o="urn:schemas-microsoft-com:office:office"
+				xmlns:x="urn:schemas-microsoft-com:office:excel"
+				xmlns="http://www.w3.org/TR/REC-html40">
+
+				<head>
+				<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+				<meta name=ProgId content=Excel.Sheet>
+				<!--[if gte mso 9]><xml>
+				 <o:DocumentProperties>
+				  <o:LastAuthor>Sriram</o:LastAuthor>
+				  <o:LastSaved>2005-01-02T07:46:23Z</o:LastSaved>
+				  <o:Version>10.2625</o:Version>
+				 </o:DocumentProperties>
+				 <o:OfficeDocumentSettings>
+				  <o:DownloadComponents/>
+				 </o:OfficeDocumentSettings>
+				</xml><![endif]-->
+				<style>
+				<!--table
+					{mso-displayed-decimal-separator:"\.";
+					mso-displayed-thousand-separator:"\,";}
+				@page
+					{margin:1.0in .75in 1.0in .75in;
+					mso-header-margin:.5in;
+					mso-footer-margin:.5in;}
+				tr
+					{mso-height-source:auto;}
+				col
+					{mso-width-source:auto;}
+				br
+					{mso-data-placement:same-cell;}
+				.style0
+					{mso-number-format:General;
+					text-align:general;
+					vertical-align:bottom;
+					white-space:nowrap;
+					mso-rotate:0;
+					mso-background-source:auto;
+					mso-pattern:auto;
+					color:windowtext;
+					font-size:10.0pt;
+					font-weight:400;
+					font-style:normal;
+					text-decoration:none;
+					font-family:Arial;
+					mso-generic-font-family:auto;
+					mso-font-charset:0;
+					border:none;
+					mso-protection:locked visible;
+					mso-style-name:Normal;
+					mso-style-id:0;}
+				td
+					{mso-style-parent:style0;
+					padding-top:1px;
+					padding-right:1px;
+					padding-left:1px;
+					mso-ignore:padding;
+					color:windowtext;
+					font-size:10.0pt;
+					font-weight:400;
+					font-style:normal;
+					text-decoration:none;
+					font-family:Arial;
+					mso-generic-font-family:auto;
+					mso-font-charset:0;
+					mso-number-format:General;
+					text-align:general;
+					vertical-align:bottom;
+					border:none;
+					mso-background-source:auto;
+					mso-pattern:auto;
+					mso-protection:locked visible;
+					white-space:nowrap;
+					mso-rotate:0;}
+				.xl24
+					{mso-style-parent:style0;
+					white-space:normal;}
+				-->
+				</style>
+				<!--[if gte mso 9]><xml>
+				 <x:ExcelWorkbook>
+				  <x:ExcelWorksheets>
+				   <x:ExcelWorksheet>
+					<x:Name>Отчет</x:Name>
+					<x:WorksheetOptions>
+					 <x:Selected/>
+					 <x:ProtectContents>False</x:ProtectContents>
+					 <x:ProtectObjects>False</x:ProtectObjects>
+					 <x:ProtectScenarios>False</x:ProtectScenarios>
+					</x:WorksheetOptions>
+				   </x:ExcelWorksheet>
+				  </x:ExcelWorksheets>
+				  <x:WindowHeight>10005</x:WindowHeight>
+				  <x:WindowWidth>10005</x:WindowWidth>
+				  <x:WindowTopX>120</x:WindowTopX>
+				  <x:WindowTopY>135</x:WindowTopY>
+				  <x:ProtectStructure>False</x:ProtectStructure>
+				  <x:ProtectWindows>False</x:ProtectWindows>
+				 </x:ExcelWorkbook>
+				</xml><![endif]-->
+				</head>
+
+				<body link=blue vlink=purple>
+				<table x:str border=0 cellpadding=0 cellspacing=0 style='border-collapse: collapse;table-layout:fixed;'><tr><td class=xl24 width=64 style='text-align:center;color:blue;border-bottom:1px solid black;'><strong> Название </strong></td><td class=xl24 width=64 style='text-align:center;color:blue;border-bottom:1px solid black;'><strong> Артикул </strong></td><td class=xl24 width=64 style='text-align:center;color:blue;border-bottom:1px solid black;'><strong> Штрихкод </strong></td><td class=xl24 width=64 style='text-align:center;color:blue;border-bottom:1px solid black;'><strong> На складе </strong></td><td class=xl24 width=64 style='text-align:center;color:blue;border-bottom:1px solid black;'><strong> Доступно </strong></td><td class=xl24 width=64 style='text-align:center;color:blue;border-bottom:1px solid black;'><strong> Цена (грн) </strong></td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Універсальний висячий замок MUL-T-LOCK®G-47/G-55</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>76</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Универсальный навесной замок MUL-T-LOCK G-47P/G-55Р</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>77</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Висячий замок підвищеної безпеки MUL-T-LOCK®M-10/M-13/M-16</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>78</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Протектор MUL-T-LOCK® H10/H13/H16</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>79</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Замок підвищеної безпеки спеціальної форми з ковзною дужкою MUL-T-LOCK® Hockey Puck</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>80</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Універсальний висячий замок MUL-T-LOCK®TS-Round</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>81</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Iнтегрований з протектором замок підвищеної безпеки MUL-T-LOCK® Hasp Lock</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>82</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Замок підвищеної безпеки з ковзною дужкою MUL-T-LOCK® Slid (SBE)</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>83</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Висячий замок підвищеної безпеки MUL-T-LOCK®E11-L/E14-L</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>84</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Висячий замок підвищеної безпеки з захищеною дужкою MUL-T-LOCK® E11-H/E14-H/E18-H</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>85</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Універсальний висячий замок ABLOY® PL 320/PL 330/PL 340/PL 350</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>86</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Висячий замок підвищеної безпеки із захищеною дужкою ABLOY® PL 342/PL 362</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>88</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Навіси ABLOY® PL200/202/201/203</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>89</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Навіси MUL-T-LOCK® для скляних дверей</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>90</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Навісний замок HORST HR-SS1-60D</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>368</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Навісний замок HORST HR-SP1-60D</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>369</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Висячий замок підвищеної надійності із захистом PLM 330 / PLI 330; PLM 340 / PLI 340; PLM 350 / PLI 350</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>373</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Замок висячий MUL-T-LOCK® NE8G / NЕ10G</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>384</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Замок висячий MUL-T-LOCK® NE10H / NE12Н / NЕ14Н</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>385</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr><tr><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>Замок висячий MUL-T-LOCK® NE10L / NE12L / NЕ14L</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>386</td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'></td><td class=xl24 width=64 style='text-align:left;color:black;font-size:14px;line-height:25px;border-right:1px solid black;'>0</td></tr></table></body></html>

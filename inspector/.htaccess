@@ -1,0 +1,6 @@
+AddDefaultCharset UTF-8
+
+RewriteEngine On
+RewriteBase /inspector/
+
+RewriteRule ^(.*)/$ /inspector/index.php 

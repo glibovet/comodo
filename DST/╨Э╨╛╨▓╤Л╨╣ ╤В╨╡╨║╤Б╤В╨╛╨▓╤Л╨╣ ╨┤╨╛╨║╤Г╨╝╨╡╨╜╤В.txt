@@ -1,0 +1,27 @@
+http://itfurline.com/
+Хостинг-пакет H-113937
+
+ХОСТИНГ:
+Control Panel: https://control.mirohost.net/ 
+Для входа используйте следующие данные: 
+CP login:	itfurline
+CP password: 	7P2PrW5a
+
+Данные для FTP клиента: 
+FTP server:	svh29.mirohost.net
+FTP login:	itfurline
+FTP password:	lpbyaFWT
+
+Данные для работы с базой данных MySQL : 
+mySQL server:	localhost 
+mySQL database:	itfurline
+mySQL login:	u_itfurline
+mySQL password:	qmEU1P6W
+
+Доступ по ftp:  
+Панель управления Cpanel: http://194.28.84.87:2082
+Панель управления MultiAdmin: http://194.28.84.87:888 или http://194.28.84.87:2086
+
+FTP
+Username: comodoki
+Password: y5esMsEnRH4z

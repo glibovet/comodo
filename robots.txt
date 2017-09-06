@@ -1,0 +1,23 @@
+User-agent: Googlebot
+Disallow: */cart/
+Disallow: /*?oll_prods=*
+Disallow: /*?letter=*
+Disallow: /*?filter=*
+Disallow: /*?gclid=*
+
+User-agent: Yandexbot
+Disallow: */cart/
+Disallow: /*?oll_prods=*
+Disallow: /*?letter=*
+Disallow: /*?filter=*
+Disallow: /*?gclid=*
+Host: www.comodo.kiev.ua/
+
+User-agent: *
+Disallow: */cart/
+Disallow: /*?oll_prods=*
+Disallow: /*?letter=*
+Disallow: /*?filter=*
+Disallow: /*?gclid=*
+
+Sitemap: http://www.comodo.kiev.ua/sitemap.xml
