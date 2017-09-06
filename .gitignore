@@ -1,0 +1,8 @@
+/vendor/*
+/config/app.php
+/tmp/*
+/logs/*
+/webroot/img/split/files/*
+/webroot/video/*
+/design/video/*
+/webroot/sitemap.xml
