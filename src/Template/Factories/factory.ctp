@@ -52,7 +52,7 @@
 				<h1><?=$mfData['name']?></h1>
                 
 				<?php if ($mfData['site']){?>
-                	<h2><?=$mfData['site']?></h2>
+                	<h2><a href="<?=$mfData['site']?>" target="_blank"><?=$mfData['site']?></a></h2>
                 <?php }?>
                 
 				<div class="factories-more__card-list-wrap">
@@ -147,7 +147,7 @@
 		<div class="container">
 			<div class="factories-more__video-wrap">
 				<?php if ($mfData['video']){
-					echo $mfData['video'];
+					echo '<a target="_blank" href="'.$mfData['video'].'">'.$mfData['video'].'</a>';
 				}?>               
 				<!--<video src="<?=RS?>video/Магия_Финляндии_в_4K.mp4" poster="<?=RS?><?=RS?>img/video-preview.jpg" id="factories-more__video"></video>
 				<button class="factories-more__video-btn" type="button"></button>-->
