@@ -137,8 +137,10 @@
                     foreach($phones as $phone) { 
 					$phonItem = ""; 
 					$phonItem = explode(" ", $phone);
-					$i=0;?>
-                   	<p><a itemprop="telephone" href="tel:<?=$phone?>">
+					$i=0;
+					$phoneCopy = $phone
+					?>
+                   	<p><a itemprop="telephone" href="tel:<?=str_replace(array(" ", "-"), "", $phoneCopy)?>">
 						<?php foreach ($phonItem as $item){
                             $i++;
                             $spanSt = "";
