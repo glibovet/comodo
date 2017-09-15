@@ -185,7 +185,8 @@ class FactoriesController extends AppController
 		if (isset ($_GET['oll_prods']) && $_GET['oll_prods']==1) {
 			$mfProdsLimit = 2000;
 			}
-		
+
+        //fetch factory description from db
 		$mfData = $conn->query("
 						SELECT M.id, M.".LANG_PREFIX."name as name, M.".LANG_PREFIX."country as country, M.".LANG_PREFIX."meta_title as meta_title, M.".LANG_PREFIX."meta_keys as meta_keys, M.".LANG_PREFIX."meta_desc as meta_desc, M.".LANG_PREFIX."details as details, M.alias, M.filename, M.crop, M.video, M.site
 						FROM osc_shop_mf as M
@@ -231,7 +232,8 @@ class FactoriesController extends AppController
 			$metaDesc = "";
 		}
 		$this->set("metaDesc", $metaDesc);//description страницы
-				
+
+        //stupid method just to take names of categories
 		$mfObjects = $conn->query("
 						SELECT O.id, O.".LANG_PREFIX."name as name
 							FROM osc_shop_products as P 
@@ -242,24 +244,25 @@ class FactoriesController extends AppController
 							GROUP BY P.obj_id
 							ORDER BY O.".LANG_PREFIX."name
 							LIMIT 300
-				")->fetchAll('assoc');	
-				
+				")->fetchAll('assoc');
+
+        // fetch all information about products in a group
 		foreach ($mfObjects as &$mf_obj){			
 				$mf_obj['products'] = $conn->query("
 				SELECT P.".LANG_PREFIX."name as name, P.".RATE_PREFIX."price as price, P.".RATE_PREFIX."sale_price as sale_price, P.alias, P.id, 
 							(SELECT crop FROM osc_files_ref WHERE `ref_id` = P.id AND `ref_table` = 'shop_products' ORDER BY `id` LIMIT 1) as img
 							FROM osc_shop_products as P 
 							WHERE P.obj_id='".$mf_obj['id']."'
-							AND  P.obj_id!=0
 							AND  P.mf_id='".$mfID."'
 							AND  P.block=0
 							ORDER BY P.".LANG_PREFIX."name
-							LIMIT ".$mfProdsLimit."
 				")->fetchAll('assoc');			
 			}			
 		$this->set("mfObjects", $mfObjects); // СПИСОК ТОВАРОВ ПРОИЗВОДИТЕЛЯ СГРУПИРОВАННОГО ПО ПРЕДМЕТАМ
-		//echo "<pre>"; print_r($mfObjects); echo "</pre>"; exit();		
-		
+		//echo "<pre>"; print_r($mfObjects); echo "</pre>"; exit();
+
+        // СПИСОК ТОВАРОВ ПРОИЗВОДИТЕЛЯ КОТОРЫМ НЕ НАЗНАЧЕН ПРЕДМЕТ
+        //Забриаются  например столовая F111
 		$mfProdsNobj = $conn->query("
 						SELECT P.".LANG_PREFIX."name as name, P.".RATE_PREFIX."price as price, P.".RATE_PREFIX."sale_price as sale_price, P.alias, P.id, 
 							(SELECT crop FROM osc_files_ref WHERE `ref_id` = P.id AND `ref_table` = 'shop_products' ORDER BY `id` LIMIT 1) as img
@@ -268,7 +271,6 @@ class FactoriesController extends AppController
 							AND  P.block=0
 							AND  (P.obj_id=0 OR P.obj_id IS NULL)
 							ORDER BY P.".LANG_PREFIX."name
-							LIMIT ".$mfProdsLimit."
 				")->fetchAll('assoc');		
 		$this->set("mfProdsNobj", $mfProdsNobj); // СПИСОК ТОВАРОВ ПРОИЗВОДИТЕЛЯ КОТОРЫМ НЕ НАЗНАЧЕН ПРЕДМЕТ
 		//echo "<pre>"; print_r($mfProdsNobj); echo "</pre>"; exit();		
