@@ -59,7 +59,7 @@
                     </span>        
 				</ul>
 				<p class="footer__email"><?=TECHMAIL?></p>
-				<p class="footer__developer">Сделано в <span><a href="https://kaminskiy-design.com.ua/" target="_blank">KamStudio</a></span></p>
+				<p class="footer__developer">Сделано в <span><a href="https://kaminskiy-design.com.ua/" target="_blank" rel="nofollow">KamStudio</a></span></p>
 			</div>
 			<div class="col-sm-4 col-xs-12">
 				<div class="footer__contacts" itemscope="" itemtype="http://schema.org/Organization">
