@@ -179,12 +179,22 @@ class FactoriesController extends AppController
 	public function factory()
     {						
 		$conn = ConnectionManager::get('default');
-		
-		$mfProdsLimit = 12;
-		
-		if (isset ($_GET['oll_prods']) && $_GET['oll_prods']==1) {
-			$mfProdsLimit = 2000;
-			}
+
+		$categoryId = 0;
+		if (isset($_GET['category_id'])) {
+		    $categoryId = $_GET['category_id'];
+        }
+        $this->set("category_id", $categoryId);
+
+        $currentPage = 1;
+		if (isset($_GET['page'])) {
+		    $currentPage = intval($_GET['page']);
+
+		    if ($currentPage < 1) {
+		        $currentPage = 1;
+            }
+        }
+        $this->set('page', $currentPage);
 
         //fetch factory description from db
 		$mfData = $conn->query("
@@ -246,39 +256,66 @@ class FactoriesController extends AppController
 							LIMIT 300
 				")->fetchAll('assoc');
 
-        // fetch all information about products in a group
-		foreach ($mfObjects as &$mf_obj){			
-				$mf_obj['products'] = $conn->query("
+		// fetch all shop products based on category
+        $products = $conn->query("
 				SELECT P.".LANG_PREFIX."name as name, P.".RATE_PREFIX."price as price, P.".RATE_PREFIX."sale_price as sale_price, P.alias, P.id, 
-							(SELECT crop FROM osc_files_ref WHERE `ref_id` = P.id AND `ref_table` = 'shop_products' ORDER BY `id` LIMIT 1) as img
-							FROM osc_shop_products as P 
-							WHERE P.obj_id='".$mf_obj['id']."'
-							AND  P.mf_id='".$mfID."'
-							AND  P.block=0
-							ORDER BY P.".LANG_PREFIX."name
-				")->fetchAll('assoc');			
-			}			
+				    (SELECT crop FROM osc_files_ref WHERE `ref_id` = P.id AND `ref_table` = 'shop_products' ORDER BY `id` LIMIT 1) as img
+				FROM osc_shop_products as P 
+				WHERE P.mf_id='".$mfID."'
+				AND P.block=0"
+                .$this->formRestrictForCategory($categoryId).
+                " ORDER BY P.".LANG_PREFIX."name ".
+                " LIMIT ".$this->productsLimitPerPage().
+                " OFFSET ".$this->countOffset($currentPage)
+        )->fetchAll('assoc');
+        $this->set("products", $products);
+
+        $totalProductNumber = $conn->query("
+				SELECT COUNT(P.id) as total_number
+				FROM osc_shop_products as P 
+				WHERE P.mf_id='".$mfID."'
+				AND P.block=0"
+                .$this->formRestrictForCategory($categoryId)
+        )->fetch('assoc');
+
+        #$this->set('totalProductNumber', $totalProductNumber);
+        #$this->set('productsPerPage', $this->productsLimitPerPage());
+        $this->set('pagesNumber', $this->pageNumber($totalProductNumber['total_number']));
+
+        // number of products in category
+		foreach ($mfObjects as &$mf_obj){
+		    $mf_obj['products_number'] = $conn->query("
+                SELECT COUNT(P.id) as product_count
+				FROM osc_shop_products as P 
+				WHERE P.obj_id='".$mf_obj['id']."'
+				AND  P.mf_id='".$mfID."'
+				AND  P.block=0
+				")->fetch('assoc');
+		}
 		$this->set("mfObjects", $mfObjects); // СПИСОК ТОВАРОВ ПРОИЗВОДИТЕЛЯ СГРУПИРОВАННОГО ПО ПРЕДМЕТАМ
 		//echo "<pre>"; print_r($mfObjects); echo "</pre>"; exit();
 
         // СПИСОК ТОВАРОВ ПРОИЗВОДИТЕЛЯ КОТОРЫМ НЕ НАЗНАЧЕН ПРЕДМЕТ
         //Забриаются  например столовая F111
-		$mfProdsNobj = $conn->query("
-						SELECT P.".LANG_PREFIX."name as name, P.".RATE_PREFIX."price as price, P.".RATE_PREFIX."sale_price as sale_price, P.alias, P.id, 
+        // equals all if ALL and equals -1 if NO CATEGORY
+        /*if ($categoryId < 1) {
+            $mfProdsNobj = $conn->query("
+						SELECT P." . LANG_PREFIX . "name as name, P." . RATE_PREFIX . "price as price, P." . RATE_PREFIX . "sale_price as sale_price, P.alias, P.id,
 							(SELECT crop FROM osc_files_ref WHERE `ref_id` = P.id AND `ref_table` = 'shop_products' ORDER BY `id` LIMIT 1) as img
-							FROM osc_shop_products as P 
-							WHERE P.mf_id='".$mfID."'
+							FROM osc_shop_products as P
+							WHERE P.mf_id='" . $mfID . "'
 							AND  P.block=0
 							AND  (P.obj_id=0 OR P.obj_id IS NULL)
-							ORDER BY P.".LANG_PREFIX."name
-				")->fetchAll('assoc');		
-		$this->set("mfProdsNobj", $mfProdsNobj); // СПИСОК ТОВАРОВ ПРОИЗВОДИТЕЛЯ КОТОРЫМ НЕ НАЗНАЧЕН ПРЕДМЕТ
-		//echo "<pre>"; print_r($mfProdsNobj); echo "</pre>"; exit();		
-		
+							ORDER BY P." . LANG_PREFIX . "name
+				")->fetchAll('assoc');
+            $this->set("mfProdsNobj", $mfProdsNobj); // СПИСОК ТОВАРОВ ПРОИЗВОДИТЕЛЯ КОТОРЫМ НЕ НАЗНАЧЕН ПРЕДМЕТ
+        }*/
+		//echo "<pre>"; print_r($mfProdsNobj); echo "</pre>"; exit();
+
 		/*$mfCollections = $conn->query("
 						SELECT C.id, C.".LANG_PREFIX."name as name,
 							(SELECT COUNT(P.id) FROM `osc_shop_products` AS P WHERE P.block=0 AND P.collection_id = C.id) as count_prods
-							FROM osc_shop_collections as C 
+							FROM osc_shop_collections as C
 							WHERE C.mf_id='".$mfID."'
 							ORDER BY C.".LANG_PREFIX."name
 							LIMIT 1000
@@ -312,5 +349,38 @@ class FactoriesController extends AppController
 			}			
 		$this->set("mfCollections", $mfCollections); // СПИСОК ТОВАРОВ ПРОИЗВОДИТЕЛЯ СГРУПИРОВАННОГО ПО КОЛЛЕКЦИИ
 		//echo "<pre>"; print_r($mfCollections); echo "</pre>"; exit();
+    }
+
+    private function formRestrictForCategory($category_id) {
+        if ($category_id > 0) {
+            return " AND P.obj_id='".$category_id."' ";
+        }
+
+        // no category
+        if ($category_id < 0) {
+            return " AND (P.obj_id=0 OR P.obj_id IS NULL) ";
+        }
+
+        return " ";
+    }
+
+    private function productsLimitPerPage() {
+        return 20;
+    }
+
+    private function countOffset($page) {
+        return ($page-1) * $this->productsLimitPerPage();
+    }
+
+    private function pageNumber($total) {
+        $pages = 0;
+
+        while ($total > 0) {
+            ++$pages;
+
+            $total -= ($this.$this->productsLimitPerPage());
+        }
+
+        return $pages;
     }
 }

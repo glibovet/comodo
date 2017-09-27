@@ -69,10 +69,11 @@
                                                 <?php }?>:</h3>
                             <ul class="hide_cont">
                                 <?php foreach ($mfObjects as $object){
-									$counObjProds = count($object['products']);?>
+									$countObjProds = $object['products_number']['product_count'];?>
                                 	<li>
-                                        <a href="#prod_tabs" class="filter-btn" data-filter="filter-<?=$object['id']?>" onClick="reloadTabs(<?=$object['id']?>);">
-                                        	<?=$object['name']?> <?php if ($object['products']){echo "(".$counObjProds.")";}?>
+                                        <?= $totalProductNumber['total_number'] ?>
+                                        <a href="<?=RS.LANG?>/fabriki/<?= $mfData['alias'] ?>/?category_id=<?=$object['id']?>#prod_tabs">
+                                        	<?=$object['name']?> <?php if ($countObjProds > 0){echo "(".$countObjProds.")";}?>
                                         </a>
                                     </li>
                                 <?php }?>
@@ -181,26 +182,54 @@
         </div>
 	</section>
 
-	<?php if ($mfObjects || $mfProdsNobj){?>
+	<?php if ($products){?>
     <a name="prod_tabs"></a>
     <section class="similar">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="similar__captions" data-toggle="buttons">
-						<button class="active filter-btn" data-filter><?php $i=0; foreach ($site_translate as $translate){					
-                                                    if ($translate['ru_text'] == "Все") {
-                                                        $i++;
-                                                        if ($i==1 ) {
-                                                            echo $translate['text'];
-                                                            }
-                                                        }?>    
-                                                <?php }?></button>
-						<?php if ($mfObjects){
-							foreach ($mfObjects as $object){?>
-                        	<button id="tabFilter-<?=$object['id']?>" class="filter-btn" data-filter="filter-<?=$object['id']?>"><?=$object['name']?></button>
-                        <?php }
-						}?>
+                        <a href="<?=RS.LANG?>/fabriki/<?= $mfData['alias'] ?>#prod_tabs">
+                            <button class="<?php if ($category_id == 0) echo 'active'  ?>" >
+                                <?php
+                                $i=0;
+                                foreach ($site_translate as $translate){
+                                    if ($translate['ru_text'] == "Все") {
+                                        $i++;
+                                        if ($i==1 ) {
+                                            echo $translate['text'];
+                                        }
+                                    }
+                                }
+                                ?>
+                            </button>
+                        </a>
+						<?php
+                        if ($mfObjects){
+                            foreach ($mfObjects as $object){ ?>
+                                <a href="<?=RS.LANG?>/fabriki/<?= $mfData['alias'] ?>/?category_id=<?=$object['id']?>#prod_tabs">
+                                    <button class="<?php if ($category_id == $object['id']) echo 'active'  ?>"><?=$object['name']?></button>
+                                </a>
+
+                                <?php
+                            }
+                        }
+                        ?>
+                        <a href="<?=RS.LANG?>/fabriki/<?= $mfData['alias'] ?>/?category_id=-1#prod_tabs">
+                            <button class="<?php if ($category_id == -1) echo 'active'  ?>" >
+                                <?php
+                                $i=0;
+                                foreach ($site_translate as $translate){
+                                    if ($translate['ru_text'] == "Без категории") {
+                                        $i++;
+                                        if ($i==1 ) {
+                                            echo $translate['text'];
+                                        }
+                                    }
+                                }
+                                ?>
+                            </button>
+                        </a>
 					</div>
 				</div>
 			</div>
@@ -209,135 +238,85 @@
 			<div class="container">
 				<div class="row">
 					<div class="masonry">
-						<?php if ($mfObjects){
-							foreach ($mfObjects as $object){
-								
-								foreach ($object['products'] as $prodItem){	
-									
-								$formatProdPrice = number_format($prodItem['price'], 0, '.', '.');								
-								$formatProdPriceSale = number_format($prodItem['sale_price'], 0, '.', '.');								
-								$prodUrl = RS.LANG."/catalog/product/".$prodItem['alias']."/";	?> 
-                                                           
-								<div class="similar__item" data-filter="filter-<?=$object['id']?>">
-									<a href="<?=$prodUrl?>" onclick="mainScript.addToView(<?=$prodItem['id']?>);">
+						<?php if ($products){
+                            foreach ($products as $prodItem){
+
+                                $formatProdPrice = number_format($prodItem['price'], 0, '.', '.');
+                                $formatProdPriceSale = number_format($prodItem['sale_price'], 0, '.', '.');
+                                $prodUrl = RS.LANG."/catalog/product/".$prodItem['alias']."/";	?>
+
+                                <div class="similar__item" data-filter="filter-<?=$object['id']?>">
+                                    <a href="<?=$prodUrl?>" onclick="mainScript.addToView(<?=$prodItem['id']?>);">
                                         <?php if ($prodItem['img']){
-											echo $this->Html->image(CIMG.$prodItem['img'], ['alt' => $prodItem['name']]);
-										}else{
-											echo $this->Html->image("noimage.png", ['alt' => "NO IMAGE"]);
-										}?>
-										<div class="similar__descr">
-											<div class="similar__see-more">
-												<p><?php $i=0; foreach ($site_translate as $translate){					
-												if ($translate['ru_text'] == "Смотреть подробнее") {
-													$i++;
-													if ($i==1 ) {
-														echo $translate['text'];
-														}
-													}?>    
-											<?php }?></p>
-											</div>
-											<div class="similar__descr-param">
-												<p class="similar__descr-name"><?=$object['name']?></p>
-												<p class="similar__descr-value"><?=$prodItem['name']?></p>
-											</div>
-											<div class="similar__descr-param">
-												<p class="similar__descr-name"><?php $i=0; foreach ($site_translate as $translate){					
-												if ($translate['ru_text'] == "Фабрика") {
-													$i++;
-													if ($i==1 ) {
-														echo $translate['text'];
-														}
-													}?>    
-											<?php }?></p>
-												<p class="similar__descr-value"><?=$mfData['name']?></p>
-											</div>
-                                            
-											<?php if($prodItem['price']){?>
-                                                <!--<div class="similar__descr-param hidden">
-                                                    <p class="similar__descr-name"><?php $i=0; foreach ($site_translate as $translate){					
-                                                        if ($translate['ru_text'] == "Цена") {
+                                            echo $this->Html->image(CIMG.$prodItem['img'], ['alt' => $prodItem['name']]);
+                                        }else{
+                                            echo $this->Html->image("noimage.png", ['alt' => "NO IMAGE"]);
+                                        }?>
+                                        <div class="similar__descr">
+                                            <div class="similar__see-more">
+                                                <p><?php $i=0; foreach ($site_translate as $translate){
+                                                        if ($translate['ru_text'] == "Смотреть подробнее") {
                                                             $i++;
                                                             if ($i==1 ) {
                                                                 echo $translate['text'];
-                                                                }
-                                                            }?>    
+                                                            }
+                                                        }?>
+                                                    <?php }?></p>
+                                            </div>
+                                            <div class="similar__descr-param">
+                                                <p class="similar__descr-name"><?=$object['name']?></p>
+                                                <p class="similar__descr-value"><?=$prodItem['name']?></p>
+                                            </div>
+                                            <div class="similar__descr-param">
+                                                <p class="similar__descr-name"><?php $i=0; foreach ($site_translate as $translate){
+                                                        if ($translate['ru_text'] == "Фабрика") {
+                                                            $i++;
+                                                            if ($i==1 ) {
+                                                                echo $translate['text'];
+                                                            }
+                                                        }?>
+                                                    <?php }?></p>
+                                                <p class="similar__descr-value"><?=$mfData['name']?></p>
+                                            </div>
+
+                                            <?php if($prodItem['price']){?>
+                                                <!--<div class="similar__descr-param hidden">
+                                                    <p class="similar__descr-name"><?php $i=0; foreach ($site_translate as $translate){
+                                                    if ($translate['ru_text'] == "Цена") {
+                                                        $i++;
+                                                        if ($i==1 ) {
+                                                            echo $translate['text'];
+                                                        }
+                                                    }?>
                                                     <?php }?></p>
                                                     <p class="similar__descr-value"><?=$formatProdPrice?> <?=CURNAME?></p>
                                                 </div>-->
                                             <?php }?>
-										</div>
-									</a>
-								</div>
-							<?php }
-							}
-						}?>
-                        
-                        <?php if ($mfProdsNobj){ 
-							foreach ($mfProdsNobj as $prodItem){
-								
-							$formatProdPrice = number_format($prodItem['price'], 0, '.', '.');								
-							$formatProdPriceSale = number_format($prodItem['sale_price'], 0, '.', '.');								
-							$prodUrl = RS.LANG."/catalog/product/".$prodItem['alias']."/";?>
-                            
-								<div class="similar__item" data-filter="no-filter">
-									<a href="<?=$prodUrl?>" onclick="mainScript.addToView(<?=$prodItem['id']?>);">
-                                        <?php if ($prodItem['img']){
-											echo $this->Html->image(CIMG.$prodItem['img'], ['alt' => $prodItem['name']]);
-										}else{
-											echo $this->Html->image("noimage.png", ['alt' => "NO IMAGE"]);
-										}?>
-										<div class="similar__descr">
-											<div class="similar__see-more">
-												<p><?php $i=0; foreach ($site_translate as $translate){					
-												if ($translate['ru_text'] == "Смотреть подробнее") {
-													$i++;
-													if ($i==1 ) {
-														echo $translate['text'];
-														}
-													}?>    
-											<?php }?></p>
-											</div>
-											<div class="similar__descr-param">
-												<p class="similar__descr-name"></p>
-												<p class="similar__descr-value"><?=$prodItem['name']?></p>
-											</div>
-											<div class="similar__descr-param">
-												<p class="similar__descr-name"><?php $i=0; foreach ($site_translate as $translate){					
-												if ($translate['ru_text'] == "Фабрика") {
-													$i++;
-													if ($i==1 ) {
-														echo $translate['text'];
-														}
-													}?>    
-											<?php }?></p>
-												<p class="similar__descr-value"><?=$mfData['name']?></p>
-											</div>
-                                            
-											<?php if($prodItem['price']){?>
-                                                <!--<div class="similar__descr-param hidden">
-                                                    <p class="similar__descr-name"><?php $i=0; foreach ($site_translate as $translate){					
-                                                        if ($translate['ru_text'] == "Цена") {
-                                                            $i++;
-                                                            if ($i==1 ) {
-                                                                echo $translate['text'];
-                                                                }
-                                                            }?>    
-                                                    <?php }?></p>
-                                                    <p class="similar__descr-value"><?=$formatProdPrice?> <?=CURNAME?></p>
-                                                </div>-->
-                                            <?php }?>
-										</div>
-									</a>
-								</div>
-						<?php }	
+                                        </div>
+                                    </a>
+                                </div>
+                            <?php }
 						}?>
 					</div>
-                    <div class="col-xs-12 margin-top30 margin-bottom60">
+                    <!--<div class="col-xs-12 margin-top30 margin-bottom60">
                         <a href="<?=CURR_URL?>?oll_prods=1" class="new__view-all">
 							<?php $i=0; foreach ($site_translate as $translate){ if ($translate['ru_text'] == "Посмотреть все") { $i++; if ($i==1 ) { echo $translate['text']; } } }?>
                         </a>
-                    </div>
+                    </div>-->
 				</div>
+                <div class="row">
+                    <?php
+                    if ($pagesNumber > 1) {
+                        for ($i = 1; $i <= $pagesNumber; ++$i) {
+                            if ($i === $page) {
+                                echo '<a href="'.RS.LANG.'/fabriki/'.$mfData['alias'].'/?category_id='.$category_id.'&page='.$i.'#prod_tabs"><button>'.$i.'(current)</button></a>';
+                            } else {
+                                echo '<a href="'.RS.LANG.'/fabriki/'.$mfData['alias'].'/?category_id='.$category_id.'&page='.$i.'#prod_tabs"><button>'.$i.'</button></a>';
+                            }
+                        }
+                    }
+                    ?>
+                </div>
 			</div>
 		</div>
 	</section>
